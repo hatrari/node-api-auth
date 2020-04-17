@@ -1,7 +1,7 @@
 const Book = require('../models/book');
 
 exports.create = (req, res) => {
-  const book = new Book(req.body.book);
+  const book = new Book(req.body);
   book.save()
   .then(response => res.status(201).json(response))
   .catch(error => res.status(400).json(error));
@@ -14,8 +14,7 @@ exports.get = (req, res) => {
 };
 
 exports.update = (req, res) => {
-  const book = new Book(req.body.book);
-  Book.updateOne({_id: req.params.id}, book)
+  Book.updateOne({_id: req.params.id}, req.body)
   .then(response => res.status(201).json(response))
   .catch(error => res.status(400).json(error));
 };

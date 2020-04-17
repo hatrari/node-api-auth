@@ -1,0 +1,9 @@
+curl -X POST http://localhost:3000/books -d "title=title"
+
+curl -X GET http://localhost:3000/books
+
+curl -X GET http://localhost:3000/books/5e9a3c0a78f04c36e4aaf1c4
+
+curl -X PUT http://localhost:3000/books/5e9a3c0a78f04c36e4aaf1c4 -d "title=title1"
+
+curl -X DELETE http://localhost:3000/books/5e9a3c0a78f04c36e4aaf1c4
