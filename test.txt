@@ -1,3 +1,9 @@
-curl -X POST http://localhost:3000/subscribers -H 'Content-Type: application/json' -d '{"name":"robert","subscribedChannel":"channel"}'
+curl -X POST http://localhost:3000/subscribers -d "name=robert&subscribedChannel=channel"
 
-curl -H "Content-type: application/json" -d '{"name":"name","subscribedChannel":"channel"}' -X POST http://localhost:3000/subscribers
+curl -X GET http://localhost:3000/subscribers
+
+curl -X GET http://localhost:3000/subscribers/5e99796a54a03f564cc52dbc
+
+curl -X PATCH http://localhost:3000/subscribers/5e99796a54a03f564cc52dbc -d "name=robertUpDated&subscribedChannel=channelUpDated"
+
+curl -X DELETE http://localhost:3000/subscribers/5e99796a54a03f564cc52dbc
