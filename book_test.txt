@@ -1,9 +1,9 @@
-curl -X POST http://localhost:3000/books -d "title=title"
+curl -X POST http://localhost:3000/books -d "title=title" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZTlhNGRmMzQ5OGZjMTQ3ZDg3Y2E5ZGYiLCJpYXQiOjE1ODcxNzI3MDIsImV4cCI6MTU4NzI1OTEwMn0.k0o4i0pzlmXk2uNatNinlwsbw_ORw7SkxnipkqJGWkk"
 
-curl -X GET http://localhost:3000/books
+curl -X GET http://localhost:3000/books -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZTlhNGRmMzQ5OGZjMTQ3ZDg3Y2E5ZGYiLCJpYXQiOjE1ODcxNzI3MDIsImV4cCI6MTU4NzI1OTEwMn0.k0o4i0pzlmXk2uNatNinlwsbw_ORw7SkxnipkqJGWkk"
 
-curl -X GET http://localhost:3000/books/5e9a3c0a78f04c36e4aaf1c4
+curl -X GET http://localhost:3000/books/5e9a3c0a78f04c36e4aaf1c4 -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZTlhNGRmMzQ5OGZjMTQ3ZDg3Y2E5ZGYiLCJpYXQiOjE1ODcxNzI3MDIsImV4cCI6MTU4NzI1OTEwMn0.k0o4i0pzlmXk2uNatNinlwsbw_ORw7SkxnipkqJGWkk"
 
-curl -X PUT http://localhost:3000/books/5e9a3c0a78f04c36e4aaf1c4 -d "title=title1"
+curl -X PUT http://localhost:3000/books/5e9a3c0a78f04c36e4aaf1c4 -d "title=title1" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZTlhNGRmMzQ5OGZjMTQ3ZDg3Y2E5ZGYiLCJpYXQiOjE1ODcxNzI3MDIsImV4cCI6MTU4NzI1OTEwMn0.k0o4i0pzlmXk2uNatNinlwsbw_ORw7SkxnipkqJGWkk"
 
-curl -X DELETE http://localhost:3000/books/5e9a3c0a78f04c36e4aaf1c4
+curl -X DELETE http://localhost:3000/books/5e9a3c0a78f04c36e4aaf1c4 -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZTlhNGRmMzQ5OGZjMTQ3ZDg3Y2E5ZGYiLCJpYXQiOjE1ODcxNzI3MDIsImV4cCI6MTU4NzI1OTEwMn0.k0o4i0pzlmXk2uNatNinlwsbw_ORw7SkxnipkqJGWkk"
