@@ -1,9 +1,0 @@
-curl -X POST http://localhost:3000/subscribers -d "name=robert&subscribedChannel=channel"
-
-curl -X GET http://localhost:3000/subscribers
-
-curl -X GET http://localhost:3000/subscribers/5e99794c54a03f564cc52dbb
-
-curl -X PATCH http://localhost:3000/subscribers/5e99794c54a03f564cc52dbb -d "name=robertUpDated&subscribedChannel=channelUpDated"
-
-curl -X DELETE http://localhost:3000/subscribers/5e99794c54a03f564cc52dbb

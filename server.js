@@ -12,7 +12,9 @@ db.once('open', () => console.log('connected to database'));
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));
 
-const bookRouter = require('./routes/book');
-app.use('/books', bookRouter);
+const bookRoutes = require('./routes/book');
+app.use('/books', bookRoutes);
+const userRoutes = require('./routes/user');
+app.use('/auth', userRoutes);
 
 app.listen(3000, () => console.log('server started'));
