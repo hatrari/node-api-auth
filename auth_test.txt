@@ -1,0 +1,3 @@
+curl -X POST http://localhost:3000/signup -d "email=test@email.com&password=test"
+
+curl -X POST http://localhost:3000/login -d "email=test@email.com&password=test"
